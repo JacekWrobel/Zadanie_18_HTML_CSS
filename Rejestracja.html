@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style type="text/css">
+
+        .mrgines{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
+
+
+</head>
+<body class="mrgines" >
+<h1>Rejestracja</h1>
+<form>
+    <!--imię - wpis w polu wpisu-->
+    <div class="form-group">
+        <label for="formGroupExampleInput">Imię</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Wpisz imię">
+    </div>
+
+
+    <!--nazwisko - wpis w polu wpisu-->
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Nazwisko</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Wpisz nazwisko">
+    </div>
+
+
+    <!--PŁEć -odznaczenie jednej opcji z dwojga
+                oraz lista opcji obok nazy punktu-->
+    <fieldset class="form-group">
+        <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0">Płeć</legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                        Kobieta
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                        Mężczyzna
+                    </label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+
+    <!--email - wymóg małpy-->
+    <div class="form-group">
+        <label for="inputEmail3">Adres email</label>
+        <input type="email" class="form-control" id="inputEmail3" placeholder="Wpisz adres email">
+    </div>
+
+    <!--hasło - mały druczek ojaśniający-->
+    <div class="form-group">
+        <label for="inputPassword3">Hasło</label>
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Hasło">
+        <small id="passwordHelpInline" class="text-muted">
+            Min. 8 znaków.
+        </small>
+    </div>
+
+    <!--miasto-->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCity">Miasto</label>
+            <input type="text" class="form-control" id="inputCity">
+        </div>
+
+        <!--województwo - wybór opcji-->
+        <div class="form-group col-md-4">
+            <label for="inputState">Województwo</label>
+            <select id="inputState" class="form-control">
+                <option selected>Wybierz...</option>
+                <option>DOLNOSLĄSKIE</option>
+                <option>MAŁOPOLSKIE</option>
+                <option>OPOLSKIE</option>
+                <option>WIELKOPOLSKIE</option>
+                <option>SLĄSKIE</option>
+            </select>
+            <!--kod pocztowy-->
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputZip">Kod pocztowy</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+    </div>
+
+    <!--checkbox z linikiem w nowym oknie-->
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="custom-control-label" for="customCheck1">Akceptuję <a
+                href="https://stacjonarne.javastart.pl/strona/owu" target="_blank">regulamin </a></label>
+    </div>
+    <!--checkbox z zaznaczonym na wstępie ptaszkiem www.kurshtml.edu.pl/-->
+    <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
+        <label class="custom-control-label" for="customCheck2">Wyrażam zgodę na otrzymywanie informacji
+            marketingowych</label>
+    </div>
+
+    <!--przycisk-->
+    <button type="submit" class="btn btn-primary">Rejestruj</button>
+
+
+</form>
+</body>
+
+</html>
